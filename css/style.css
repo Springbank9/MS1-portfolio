@@ -3,47 +3,43 @@ html, body {
     margin: 0;
 }
 
-.logo-image {
+.responsive-image {
     border-radius: 50%;
+    float: left;
+    opacity: 0.8;
+
 }
 
-.header .logo-image {
-  border-radius: 50%;
-  float: left;
-  width: 100px;
-  height: 100px;
-}
-
-.header  {
-  position: relative;
-  top: 18px;
-  left: 10px;
-}
 
 .navbar-expand-lg {
     background: none;
 }
 
-.header-image {
-    background: url('images/.header-image.png') no-repeat center center;
-    max-width: 100%;
-  
-}
 
 main {
-    background: #d9d7d5;
+    background: transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
+.header-img {
+    background: url('images/header-image.png') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 56.5%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
+
+}
+
  section {
-    background: #767775;
     flex-basis: 100%;
     height: 600px;
     margin-bottom: 0.5rem;
   }
-
+  
+  
   @media (min-width: 600px) {
     main {
       flex-wrap: nowrap;
