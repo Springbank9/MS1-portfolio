@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     margin: 0;
+    position: relative;
+    overflow-y: scroll;
 }
 
 .responsive-image {
@@ -11,8 +13,10 @@ html, body {
 }
 
 
-.navbar-expand-lg {
-    background: none;
+.navbar-light {
+    background: transparent;
+    position: fixed;
+    border: white
 }
 
 
@@ -23,13 +27,14 @@ main {
     justify-content: space-between;
   }
 
-.header-img {
-    background: url('images/header-image.png') no-repeat center center;
+.header-image {
+    background: url('../images/header-image.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     padding-bottom: 56.5%; /* = ( 600 / 1600 ) x 100 used to resize image when viewing on smaller devices (code from: https://stackoverflow.com/questions/43214466/resizing-background-image-with-bootstrap)*/
+    margin-top: -90px;
 
 }
 

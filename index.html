@@ -19,37 +19,40 @@
 <body>
 
 <!--Navigation bar-->
-<nav class="navbar navbar-expand-lg navbar-light">
-      <img class="responsive-image ml-3" alt="logo" src="images/logo-image.jpeg" style="height: 66px;">
-    
-    <div class="mx-auto order-0">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item">
-                <a class="nav-link" href="#paintings">Paintings</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#prints">Prints</a>
-            </li>
-        </ul>
-    </div>
+<nav id="navbar-example2" class="navbar navbar-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#@about">@about</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#@paintings">@paintings</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#@prints">@prints</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@wildlife photography</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#scotland">Scotland</a>
+        <a class="dropdown-item" href="#two">Kenya</a>
+      </div>
+    </li>
+  </ul>
 </nav>
+</div>
 
 <main>
 <!--Header Image -->
 <header>
-<div class="header-img">
+<div class="header-image">
 </div>
-</header> 
+</header>
 
 <!--About-->
-<section class="wrapper-about" id="about">
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+
+<section class="wrapper-about" id="@about">
     <div class="column-content">
         <div class="col-lg-4">
             <p>This is where I will write a bit about myself</p>
@@ -58,7 +61,7 @@
 </section>
 
 <!--Paintings-->
-<section class="wrapper-paintings" id="paintings">
+<section class="wrapper-paintings" id="@paintings">
     <div class="row">
   <div class="col-sm-4">
     <div class="card">
@@ -90,9 +93,9 @@
 </section>
 
 <!--Prints-->
-<section class="wrapper-prints" id="prints">
+<section class="wrapper-prints" id="@prints">
     <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-6">
     <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="images/hare-print.jpeg" alt="Card image cap">
   <div class="card-body">
@@ -111,7 +114,7 @@
 </div>
 </div>
 
-<div class="col-sm-2">
+<div class="col-sm-6">
     <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="images/hare-print.jpeg" alt="Card image cap">
   <div class="card-body">
@@ -131,7 +134,67 @@
 </div>
 </div>
 
+<section class="wrapper-photography--scotland" id="scotland">
+    <div class="row">
+  <div class="column">
+    <img src="wedding.jpg">
+    <img src="rocks.jpg">
+    <img src="falls2.jpg">
+    <img src="paris.jpg">
+    <img src="nature.jpg">
+    <img src="mist.jpg">
+    <img src="paris.jpg">
+  </div>
+  <div class="column">
+    <img src="underwater.jpg">
+    <img src="ocean.jpg">
+    <img src="wedding.jpg">
+    <img src="mountainskies.jpg">
+    <img src="rocks.jpg">
+    <img src="underwater.jpg">
+  </div>
+  <div class="column">
+    <img src="wedding.jpg">
+    <img src="rocks.jpg">
+    <img src="falls2.jpg">
+    <img src="paris.jpg">
+    <img src="nature.jpg">
+    <img src="mist.jpg">
+    <img src="paris.jpg">
+  </div>
+  <div class="column">
+    <img src="underwater.jpg">
+    <img src="ocean.jpg">
+    <img src="wedding.jpg">
+    <img src="mountainskies.jpg">
+    <img src="rocks.jpg">
+    <img src="underwater.jpg">
+  </div>
+</div>
 </section>
+
+<!--Contact-->
+
+<div id="contact" class="w3-container w3-center w3-padding-32">
+<h2 class="w3-wide">CONTACT</h2>
+Chicago, US<br>
+Phone: +00 151515<br>
+Email: mail@mail.com<br>
+<p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
+
+<form action="/action_page.php" target="_blank">
+<input class="w3-input" type="text" placeholder="Name" required name="Name">
+<input class="w3-input" type="text" placeholder="Email" required name="Email">
+<input class="w3-input" type="text" placeholder="Message" required name="Message">
+<br>
+<button class="w3-button w3-black" type="submit">SEND</button>
+</form>
+
+<img src="map.jpg" class="w3-image" style="width:100%">
+</div>
+
+
+</div>
 </main>
 
 </body>
