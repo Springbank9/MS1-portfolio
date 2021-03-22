@@ -1,25 +1,246 @@
 html, body {
     height: 100%;
     margin: 0;
+    position: relative;
+    overflow-y: scroll;
 }
 
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  background: #555;
-}
-
-.header h1 {
+.bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  top: 18px;
-  left: 10px;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.header-image {
-    position:relative;
-    opacity: 0.70;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bgimg-1 {
+    background-image: url("../images/grazing.jpeg");
+      min-height: 100%;
+
 }
+
+.bgimg-2 {
+  background-image: url("../images/look.jpeg");
+  min-height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url("../images/stare.jpeg");
+  min-height: 100%;
+}
+
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.responsive-image {
+    float: left;
+    opacity: 0.8;
+
+}
+
+.navbar-light {
+    position: fixed;
+    background-color: white;
+}
+.nav-item .nav-link {
+    font-family:"Lato", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.carousel {
+    margin: 5px;
+    padding: 5px;
+
+}
+
+
+.about-section {
+    background-color:white;
+    text-align:left;
+    padding: 50px 20px 80px;
+    font-size:small;
+    font-family: "Lato", sans-serif;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    color: #777;
+  padding: 5px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+p { 
+    color: #777;
+      margin-bottom: 0.5px;
+      font-weight: lighter;
+      text-align: left;
+      font-size: x-small;
+}
+
+.carousel-caption p {
+    color: #777;
+      margin-bottom: 0.5px;
+      font-weight: lighter;
+      text-align: left;
+      font-size: x-small;
+}
+  
+.caption span.border {
+    color: #777;
+  padding: 5px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+}
+
+.card .card-body .card-text p {
+    font-size: x-small;
+    font-weight: lighter;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+
+.carousel-print {
+    margin: 20px;
+    padding: 20px;
+}
+
+h6 {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+    color: #777;
+  font-size: 25px;
+  letter-spacing: 10px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
+}
+
+.img-fluid {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+ .note .link-btn {
+    text-decoration: none;
+    color: #777;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.note .link-btn :hover {
+        color: black;
+        text-decoration: none;
+
+}
+
+
+.container-contact {
+  text-align: center;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+}
+
+  @media (min-width: 600px) {
+    main {
+      flex-wrap: nowrap;
+    }
+
+    section {
+      flex-basis: 33%;
+    }
+  }
+
+
+
+
+
+
+
+.carousel-caption {
+    color: black;
+    font-size: small;
+    font-weight: bold;
+}
+
+.painting-section {
+    margin: 20px;
+    padding: 20px;
+}
+
+.painting-captions {
+    font-size: x-small;
+}
+
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-content{
+        background-image: url("../images/modal-image.jpeg");   
+    padding: 20px; 
+    font-size: small;
+}
+
+
+
+.text-right .link-btn {
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: small;
+    font-family: "Lato", sans-serif;
+    opacity: 0.7;
+}
+
+.button-light{
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
